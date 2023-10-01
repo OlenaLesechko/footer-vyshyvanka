@@ -32,7 +32,7 @@ footer {
 
 .container-footer {
     display: flex;
-    width: 375px;
+    min-width: 320px;
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -45,7 +45,7 @@ footer {
 .footer-nav {
     display: flex;
     min-height: 61px;
-    min-width: 280px;
+    min-width: 260px;
     margin-bottom: 40px;
 
 
@@ -55,13 +55,13 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 40px; 
-    row-gap: 25px;
+    column-gap: 20px; 
+    row-gap: 22px;
     padding: 0;
 }
 
 .footer-list-item {
-    flex-basis: calc((100% - 40px) / 2);
+    flex-basis: calc((100% - 20px) / 2);
     padding: 0;
 
 }
@@ -88,7 +88,7 @@ text-transform: uppercase;
     font-weight: 400;
     line-height: 1.23; /* 122.727% */
     letter-spacing: -0.03em;
-    width: 335px;
+    width: 310px;
     padding-bottom: 80px;
     margin: 0;
 
@@ -111,9 +111,9 @@ text-transform: uppercase;
     align-items: start;
     flex-shrink: 0;
     display: flex;
-    min-width: 375px;
+    min-width: 320px;
     height: 190px;
-    background-image: url(/images/ornament.png);
+    background-image: url(/images/bg-footer-mobile-min.png);
     background-repeat: no-repeat;
     background-position: center;
 }
