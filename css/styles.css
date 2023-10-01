@@ -58,16 +58,19 @@ footer {
 }
 
 .footer-list-item {
-color: var(--white, #FCF9F9);
+row-gap: 25px;
+}
+.footer-list-link {
+    color: var(--white, #FCF9F9);
 font-family: Manrope;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 1.29;
 text-transform: uppercase;
-row-gap: 25px;
-
 }
+
+
 
 
 .footer-title {
