@@ -25,41 +25,47 @@ img {
     text-decoration: none;
 }
 
-
+footer {
+    margin: 0;
+    
+}
 
 .container-footer {
+    display: flex;
     width: 375px;
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
-    display: flex;
+    padding-bottom: 0;
     flex-direction: column;
     text-align: left;
     justify-content: center;
 }
-footer {
-    display: block;
-    margin: 0;
-    
-}
+
 .footer-nav {
- 
- 
+    display: inline-flex;
+    align-items: flex-start;
+    min-height: 61px;
+
 }
 
 .footer-list {
-
-
+    display: inline;
+    flex-direction: column;
+    column-count: 2;
+    flex-wrap: wrap;
+    gap: 40px; 
 }
 
 .footer-list-item {
-  color: var(--white, #FCF9F9);
+color: var(--white, #FCF9F9);
 font-family: Manrope;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 1.29;
 text-transform: uppercase;
+row-gap: 25px;
 
 }
 
@@ -92,19 +98,14 @@ text-transform: uppercase;
 }
 
 .footer-end { 
-    padding-right: 0px;
-    align-items: center;
+    padding: 0px;
+    align-items: start;
     flex-shrink: 0;
     display: flex;
     min-width: 375px;
-    height: 401px;
+    height: 190px;
     background-image: url(/images/ornament.png);
     background-repeat: no-repeat;
     background-position: center;
 }
-/* .bg-img {
-   
-   
-   
-} */
 
