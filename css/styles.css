@@ -38,10 +38,29 @@ text-transform: uppercase;
 
 
 .footer-title {
+    color: var(--white, #FCF9F9);
+    font-family: Manrope;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.23; /* 122.727% */
+    letter-spacing: -0.03em;
 
 }
 
 .footer-span {
+    color: #ECD979;
+font-family: Manrope;
+font-size: 44px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.23;
+letter-spacing: -0.03em;
 
 }
 
+.bg-img {
+    width: 451.393px;
+    height: 400.553px;
+    flex-shrink: 0;
+}
