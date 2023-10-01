@@ -1,0 +1,47 @@
+body {
+    background: #1C2225;
+}
+.list {
+    list-style-type: none;
+}
+.container-footer {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80;
+}
+footer {
+    
+    margin: 0;
+    
+}
+.footer-nav {
+ 
+ 
+}
+
+.footer-list {
+
+
+}
+
+.footer-list-item {
+  color: var(--white, #FCF9F9);
+font-family: Manrope;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.29;
+text-transform: uppercase;
+
+}
+
+
+.footer-title {
+
+}
+
+.footer-span {
+
+}
+
