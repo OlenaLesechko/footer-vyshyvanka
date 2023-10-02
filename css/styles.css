@@ -67,11 +67,21 @@ footer {
     text-align: left;
 }
 
-.footer-list-item {
+@media screen and (min-width: 320px) and (max-width: 374px) {
+    .footer-list-item {
     flex-basis: calc((100% - 20px) / 2);
     padding: 0;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    min-height: 61px;
+    min-width: 260px;
 
 }
+
+}
+
 .footer-list-link {
     color: var(--white, #FCF9F9);
 font-family: Manrope;
@@ -133,8 +143,12 @@ text-transform: uppercase;
         margin-right: auto;
     }
     .footer-nav {
-        height: 61px;
-    }
+    display: flex;
+    flex-direction: column;
+    height: 61px;
+    min-width: 260px;
+
+}
     .footer-list {
     column-gap: 40px; 
     row-gap: 25px;
@@ -159,36 +173,38 @@ text-transform: uppercase;
         min-height: 370px;
         display: flex;
         flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
         
     }
     .container-footer {
-        margin-left: auto;
-        margin-right: auto;
         padding-top: 40px;
         padding-left: 32px;
         padding-right: 41px;
         padding-bottom: 40px;
-        flex-direction: column;
         text-align: left;
         row-gap: 80px;
     }
     .footer-nav {
     display: inline-flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    row-gap: 25px;
+    height: 18px;
     
 
 }
 .footer-list-item {
-    width: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
     .footer-list {
         display: flex;
-        flex-wrap: nowrap;
         align-items: flex-start;
-        width: 478px;
         justify-content: flex-start;
-        height: 18px;
+        
     }
 
     .footer-title {
@@ -206,21 +222,60 @@ text-transform: uppercase;
 .footer-end { 
     width: 174px;
     padding: 0px;
-    flex-shrink: 0;
-    height: 401px;
+    min-height: 401px;
     background-image: url(/images/bg-footer-tablet-min.png);
     background-repeat: repeat-y;
     background-position: 34% 0;
-    background-size: ;
+    background-size: cover;
 
 }
 }
-
-
 
 /*=======TABLET======= */ 
 
-/*============== */ 
+/*=======DESKTOP======= */ 
+@media screen and (min-width: 1280px) {
+    
+    .footer-block {
+        width: 1280px;
+        min-height: 363px;
+
+    }
+.container-footer {
+        width: 754px;
+        margin-top: 40px;
+        margin-left: 90px;
+        margin-right: 100px;
+        margin-bottom: 40px;
+        padding: 0;
+        text-align: left;
+        row-gap: 117px;
+    }
+
+    .footer-title {
+        width: 754px;
+        height: 148px;
+        font-size: 64px;
+        line-height: 1.16; /* 115.625% */
+}
+
+.footer-span {
+    font-size: 64px;
+    line-height: 1.16; /* 118.519% */
+}
+
+.footer-end { 
+    width: 336px;
+    min-height: 363px;
+    background-image: url(/images/bg-footer-desktop-min.png);
+    background-repeat: repeat-y;
+    background-position: 34% 0;
+    background-size: cover;
+}
+
+}
+
+/*=======DESKTOP======= */ 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px),
 screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
