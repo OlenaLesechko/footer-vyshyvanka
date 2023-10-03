@@ -1,50 +1,15 @@
-body {
-    background: #1C2225;
-}
-h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin: 0;
-}
-h1 {
-    display: flex;
-}
-ul, ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-}
-img {
-    display: block;
-}
-
-.list {
-    list-style-type: none;
-}
-.link, .address {
-    text-decoration: none;
-}
-
-footer {
-    
-    margin: 0;
-    
-}
-
 .footer-block {
-    display: flex;
-    flex-direction: column;
+    display: block;
     border-top: 1px solid rgba(252, 249, 249, 0.10);
 
 }
 .container-footer {
-    display: flex;
+    display: block;
     width: 100%;
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 80px;
-    flex-direction: column;
     gap: 40px;
     text-align: left;
     justify-content: stretch;
@@ -53,12 +18,11 @@ footer {
 
 .footer-nav {
     display: flex;
+    flex-wrap: wrap;
     min-width: 260px;
-
 }
 
 .footer-list {
-    display: flex;
     flex-wrap: wrap;
     column-gap: 20px; 
     row-gap: 22px;
@@ -72,6 +36,8 @@ footer {
     padding: 0;
 }
 .footer-nav {
+    display: flex;
+    flex-wrap: wrap;
     min-width: 260px;
 
 }
@@ -96,10 +62,11 @@ text-transform: uppercase;
     font-size: 44px;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.23; /* 122.727% */
+    line-height: 1.23; 
     letter-spacing: -0.03em;
     width: 100%;
-    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 80px;
 
 
 }
@@ -122,7 +89,7 @@ text-transform: uppercase;
     display: flex;
     width: 100%;
     height: 190px;
-    background-image: url(/images-footer/bg-footer-mobile-min.png);
+    background-image: url(/src/img/images-footer/bg-footer-mobile-min.png);
     background-repeat: repeat-x;
     background-position: center;
     background-size:auto;
@@ -140,8 +107,7 @@ text-transform: uppercase;
     }
     .footer-nav {
     display: flex;
-    flex-direction: column;
-    height: 61px;
+    flex-wrap: wrap;
     min-width: 260px;
 
 }
@@ -179,27 +145,19 @@ text-transform: uppercase;
         padding-right: 41px;
         padding-bottom: 40px;
         text-align: left;
-        row-gap: 80px;
     }
     .footer-nav {
-    display: inline-flex;
+    display: flex;
     flex-wrap: nowrap;
-    column-gap: 25px;
-    height: 18px;
-    
-
 }
 .footer-list-item {
     display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
+
 }
 
     .footer-list {
-        display: flex;
         align-items: flex-start;
         justify-content: flex-start;
-        column-gap: 25px;
         
     }
 
@@ -219,7 +177,7 @@ text-transform: uppercase;
     width: 174px;
     padding: 0px;
     min-height: 401px;
-    background-image: url(/images-footer/bg-footer-tablet-min.png);
+    background-image: url(/src/img/images-footer/bg-footer-tablet-min.png);
     background-repeat: repeat-y;
     background-position: 34% 0;
     background-size: cover;
@@ -252,18 +210,18 @@ text-transform: uppercase;
         width: 754px;
         height: 148px;
         font-size: 64px;
-        line-height: 1.16; /* 115.625% */
+        line-height: 1.16; 
 }
 
 .footer-span {
     font-size: 64px;
-    line-height: 1.16; /* 118.519% */
+    line-height: 1.16;
 }
 
 .footer-end { 
     width: 336px;
     min-height: 363px;
-    background-image: url(/images-footer/bg-footer-desktop-min.png);
+    background-image: url(/src/img/images-footer/bg-footer-desktop-min.png);
     background-repeat: repeat-y;
     background-position: 34% 0;
     background-size: cover;
@@ -276,7 +234,7 @@ text-transform: uppercase;
 screen and (min-resolution: 2dppx) and (max-width: 767px),
 screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .main-page {
-        background-image: url(/images-footer/bg-footer-mobile@2x-min.png);
+        background-image: url(/src/img/images-footer/bg-footer-mobile@2x-min.png);
     }
     
 }
@@ -285,7 +243,7 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
 screen and (min-resolution: 2dppx) and (min-width: 768px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
     .main-page {
-        background-image: url(/images-footer/bg-footer-tablet@2x-min.png);
+        background-image: url(/src/img/images-footer/bg-footer-tablet@2x-min.png);
     }
     
 }
@@ -294,8 +252,7 @@ screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 screen and (min-resolution: 2dppx) and (min-width: 1280px),
 screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
     .main-page {
-        background-image: url(/images-footer/bg-footer-desktop@2x-min.png);
+        background-image: url(/src/img/images-footer/bg-footer-desktop@2x-min.png);
     }
     
 }
-
